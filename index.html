@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>E-5 Budget</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+              <a href="index.html">Home</a>
+            </div>
+
+            <div class="nav-link-wrapper">
+                <a href="instr.html">Instructions</a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="brand">
+                <div>DGIS/E-5</div>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(Images/Database.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="Images/Logos/Datasheet.png" alt="" />
+                  </div>
+
+                  <div class="subtitle">
+                      Click here to view database that contains data relating to various Financial Years!
+                  </div>
+                </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Images/Dashboard.jpg)"></div>
+                    <div class="img-text-wrapper">
+                      <div class="logo-wrapper">
+                        <img src="Images/Logos/Dashboard.png" alt="" />
+                      </div>
+
+                      <div class="subtitle">
+                          Click here to view Dashboard to get an overall view of the state of Funds!
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(Images/Analytics.jpg)"></div>
+                        <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+                            <img src="Images/Logos/Analytics.png" alt="" />
+                          </div>
+
+                          <div class="subtitle">
+                              Click here to view analysis of the collated data!
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image:url(Images/Report.jpg)"></div>
+                            <div class="img-text-wrapper">
+                              <div class="logo-wrapper">
+                                <img src="Images/Logos/Report.png" alt="" />
+                              </div>
+
+                              <div class="subtitle">
+                                  Click here to generate and download various Reports!
+                              </div>
+                            </div>
+                            </div>
+
+
+                            <div class="portfolio-item-wrapper">
+                                <div class="portfolio-img-background" style="background-image:url(Images/search.jpg)"></div>
+                                <div class="img-text-wrapper">
+                                  <div class="logo-wrapper">
+                                    <img src="Images/Logos/Search.png" alt="" />
+                                  </div>
+
+                                  <div class="subtitle">
+                                      Click here to search the database for specific value derived data!
+                                  </div>
+                                </div>
+                                </div>
+
+                                <div class="portfolio-item-wrapper">
+                                    <div class="portfolio-img-background" style="background-image:url(Images/Print.jpg)"></div>
+                                    <div class="img-text-wrapper">
+                                      <div class="logo-wrapper">
+                                        <img src="Images/Logos/Print.png" alt="" />
+                                      </div>
+
+                                      <div class="subtitle">
+                                          Click here to view and print selected reports!
+                                      </div>
+                                    </div>
+                                    </div>
+                  </div>
+            </div>
+
+        </div>
+
+
+
+
+</body>
+<script type="text/javascript">
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+          })
+    }
+    )
+</script>
+</html>
